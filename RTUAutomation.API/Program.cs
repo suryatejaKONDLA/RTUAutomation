@@ -38,6 +38,8 @@ builder.Services.AddOpenApiDocument(config =>
 });
 
 builder.Services.AddHealthChecks();
+builder.Services.AddControllers();
+builder.Services.AddRtuAutomationServices();
 
 var app = builder.Build();
 
@@ -56,4 +58,5 @@ app.UseSwaggerUi(settings =>
 });
 
 app.MapOpenApi();
+app.MapControllers();
 await app.RunAsync();
