@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RTUAutomation.Common\RTUAutomation.Common.csproj" />
+    <ProjectReference Include="..\RTUAutomation.Models\RTUAutomation.Models.csproj" />
+    <ProjectReference Include="..\RTUAutomation.Repository\RTUAutomation.Repository.csproj" />
+  </ItemGroup>
+
+</Project>
