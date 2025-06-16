@@ -1,0 +1,140 @@
+﻿@page "/"
+@using RTUAutomation.App.Components
+
+<PageTitle>Home</PageTitle>
+<div class="container-fluid">
+    <div class="align-items-end g-4 mb-3 row">
+        <div class="col-md-4">
+            <PasTemplateDropdown ValueChanged="@(OnFileSelectedAsync)" />
+        </div>
+        @{
+            if (!string.IsNullOrEmpty(SelectedFileName))
+            {
+                <div class="col-md-8">
+                    <PasSheetSelector SelectedSheetChanged="@(OnSheetSelectedAsync)"
+                                      SheetNames="@(SheetsNames)" />
+                </div>
+            }
+        }
+    </div>
+
+    <div class="align-items-end g-4 mb-3 row mt-3">
+        @{
+            if (SelectedSheetName == "Analogs")
+            {
+                <MudText Typo="Typo.h6">Analog Sheet</MudText>
+
+                if (AnalogData.Any())
+                {
+                    <MudDataGrid Bordered="true"
+                                 Dense="true"
+                                 FixedHeader="true"
+                                 Height="500px"
+                                 Items="@(AnalogData)"
+                                 T="@(PasStandardizationTemplateAnalogSheetModel)"
+                                 Virtualize="true">
+                        <Columns>
+                            <PropertyColumn Property="x => x.Rtu" />
+                            <PropertyColumn Property="x => x.Tms" />
+                            <PropertyColumn Property="x => x.Description" />
+                            <PropertyColumn Property="x => x.OsiName" />
+                            <PropertyColumn Property="x => x.ScadaKey" />
+                            <PropertyColumn Property="x => x.Ph" />
+                            <PropertyColumn Property="x => x.Unit" />
+                            <PropertyColumn Property="x => x.FullScaleValue" />
+                            <PropertyColumn Property="x => x.FullScaleCount" />
+                            <PropertyColumn Property="x => x.TerminationPointTypeUtilizeForHardwareAndSoftware" />
+                            <PropertyColumn Property="x => x.TerminationPointTypeUtilizeForHardwareAndSoftware1" />
+                            <PropertyColumn Property="x => x.Ctr" />
+                            <PropertyColumn Property="x => x.Ptr" />
+                            <PropertyColumn Property="x => x.ResistorSize" />
+                            <PropertyColumn Property="x => x.XdcrType" />
+                            <PropertyColumn Property="x => x.Comments" />
+                        </Columns>
+                    </MudDataGrid>
+                }
+                else
+                {
+                    @Spinner()
+                }
+            }
+            else if (SelectedSheetName == "Status")
+            {
+                <MudText Typo="Typo.h6">Status Sheet</MudText>
+
+                if (StatusData.Any())
+                {
+                    <MudDataGrid Bordered="true"
+                                 Dense="true"
+                                 FixedHeader="true"
+                                 Height="500px"
+                                 Items="@(StatusData)"
+                                 T="@(PasStandardizationTemplateStatusSheetModel)"
+                                 Virtualize="true">
+                        <Columns>
+                            <PropertyColumn Title="0" Property="x => x._0" />
+                            <PropertyColumn Title="1" Property="x => x._1" />
+                            <PropertyColumn Property="x => x.Rtu" />
+                            <PropertyColumn Property="x => x.Tms" />
+                            <PropertyColumn Property="x => x.Description" />
+                            <PropertyColumn Property="x => x.OsiName" />
+                            <PropertyColumn Property="x => x.ScadaKey" />
+                            <PropertyColumn Property="x => x.StatusDescription" />
+                            <PropertyColumn Property="x => x.TmsInvert0110" />
+                            <PropertyColumn Property="x => x.NormalState" />
+                            <PropertyColumn Property="x => x.TerminationPointTypeUtilizeForHardwareAndSoftware" />
+                            <PropertyColumn Property="x => x.TerminationPointTypeUtilizeForHardwareAndSoftware1" />
+                            <PropertyColumn Property="x => x.Comments" />
+                        </Columns>
+                    </MudDataGrid>
+                }
+                else
+                {
+                    @Spinner()
+                }
+            }
+            else if (SelectedSheetName == "Controls")
+            {
+                <MudText Typo="Typo.h6">Controls Sheet</MudText>
+
+                if (ControlsData.Any())
+                {
+                    <MudDataGrid Bordered="true"
+                                 Dense="true"
+                                 FixedHeader="true"
+                                 Height="500px"
+                                 Items="@(ControlsData)"
+                                 T="@(PasStandardizationTemplateControlsSheetModel)"
+                                 Virtualize="true">
+                        <Columns>
+                            <PropertyColumn Property="x => x.Rtu" />
+                            <PropertyColumn Property="x => x.Tms" />
+                            <PropertyColumn Property="x => x.Description" />
+                            <PropertyColumn Property="x => x.OsiName" />
+                            <PropertyColumn Property="x => x.ScadaKey" />
+                            <PropertyColumn Property="x => x.TerminationPointTypeUtilizeForHardwareAndSoftware" />
+                            <PropertyColumn Property="x => x.TerminationPointTypeUtilizeForHardwareAndSoftware1" />
+                            <PropertyColumn Property="x => x.Comments" />
+                        </Columns>
+                    </MudDataGrid>
+                }
+                else
+                {
+                    @Spinner()
+                }
+            }
+        }
+    </div>
+</div>
+
+@code
+{
+    private RenderFragment Spinner() => @<div class="align-items-center d-flex justify-content-center"
+                                              style="height: 200px;">
+                                            <div class="spinner-grow text-primary"
+                                                 role="status"
+                                                 style="width: 4rem; height: 4rem;">
+                                                <span class="visually-hidden">Loading...</span>
+                                            </div>
+                                        </div>;
+}

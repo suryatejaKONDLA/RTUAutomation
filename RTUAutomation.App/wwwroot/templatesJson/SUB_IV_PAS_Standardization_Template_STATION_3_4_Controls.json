@@ -1,0 +1,1002 @@
+[
+  {
+    "RTU": 0,
+    "TMS": 1,
+    "Description": "SS-1",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "CO1 SBO ",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "TB-1",
+    "Comments": ""
+  },
+  {
+    "RTU": 1,
+    "TMS": 2,
+    "Description": "SS-2",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "TB-2",
+    "Comments": ""
+  },
+  {
+    "RTU": 2,
+    "TMS": 3,
+    "Description": "SS-3",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "TB-3",
+    "Comments": ""
+  },
+  {
+    "RTU": 3,
+    "TMS": 4,
+    "Description": "SS-4",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "TB-4",
+    "Comments": ""
+  },
+  {
+    "RTU": 4,
+    "TMS": 5,
+    "Description": "SS-5",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "TB-5",
+    "Comments": ""
+  },
+  {
+    "RTU": 5,
+    "TMS": 6,
+    "Description": "SS-6",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "TB-6",
+    "Comments": ""
+  },
+  {
+    "RTU": 6,
+    "TMS": 7,
+    "Description": "VOLTAGE REDUCTION 2.5%",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "TB-7",
+    "Comments": ""
+  },
+  {
+    "RTU": 7,
+    "TMS": 8,
+    "Description": "VOLTAGE REDUCTION 5.0%",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "TB-8",
+    "Comments": ""
+  },
+  {
+    "RTU": 8,
+    "TMS": 9,
+    "Description": "TRANSFORMER LTC AUTO MODE ON/OFF",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "CO2 SBO ",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "TB-1",
+    "Comments": ""
+  },
+  {
+    "RTU": 9,
+    "TMS": 10,
+    "Description": "HSI-3",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "TB-2",
+    "Comments": ""
+  },
+  {
+    "RTU": 10,
+    "TMS": 11,
+    "Description": "TRANS 3 LOW OIL TRIPPING",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "TB-3",
+    "Comments": ""
+  },
+  {
+    "RTU": 11,
+    "TMS": 12,
+    "Description": "HSI-4",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "TB-4",
+    "Comments": ""
+  },
+  {
+    "RTU": 12,
+    "TMS": 13,
+    "Description": "SS-7",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "TB-5",
+    "Comments": ""
+  },
+  {
+    "RTU": 13,
+    "TMS": 14,
+    "Description": "SS-8",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "TB-6",
+    "Comments": ""
+  },
+  {
+    "RTU": 14,
+    "TMS": 15,
+    "Description": "SS-9",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "TB-7",
+    "Comments": ""
+  },
+  {
+    "RTU": 15,
+    "TMS": 16,
+    "Description": "TRANS 4 LOW OIL TRIPPING",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "TB-8",
+    "Comments": ""
+  },
+  {
+    "RTU": 16,
+    "TMS": 17,
+    "Description": "Trans 3 Load Transfer ",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "SOFTWARE",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "PORT 4 IED 1",
+    "Comments": ""
+  },
+  {
+    "RTU": 17,
+    "TMS": 18,
+    "Description": "SPARE",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 18,
+    "TMS": 19,
+    "Description": "Trans 4 Load Transfer ",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "SOFTWARE",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "PORT 4 IED 2",
+    "Comments": ""
+  },
+  {
+    "RTU": 19,
+    "TMS": 20,
+    "Description": "FEEDER 31 RECLOSING",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "SOFTWARE",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "PORT 2 IED 1",
+    "Comments": ""
+  },
+  {
+    "RTU": 20,
+    "TMS": 21,
+    "Description": "FEEDER 31 INST. TRIPPING",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 21,
+    "TMS": 22,
+    "Description": "FEEDER 31 TRIP/CLOSE",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 22,
+    "TMS": 23,
+    "Description": "FEEDER 31 ALT SET CTRL",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 23,
+    "TMS": 24,
+    "Description": "FEEDER 31 TRANSFER (SPARE IF NOT USED)",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 24,
+    "TMS": 25,
+    "Description": "FEEDER 31 LINE WORK ",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 25,
+    "TMS": 26,
+    "Description": "FEEDER 32 RECLOSING",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "SOFTWARE",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "PORT 2 IED 2",
+    "Comments": ""
+  },
+  {
+    "RTU": 26,
+    "TMS": 27,
+    "Description": "FEEDER 32 INST. TRIPPING",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 27,
+    "TMS": 28,
+    "Description": "FEEDER 32 TRIP/CLOSE",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 28,
+    "TMS": 29,
+    "Description": "FEEDER 32 ALT SET CTRL",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 29,
+    "TMS": 30,
+    "Description": "FEEDER 32 TRANSFER (SPARE IF NOT USED)",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 30,
+    "TMS": 31,
+    "Description": "FEEDER 32 LINE WORK ",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 31,
+    "TMS": 32,
+    "Description": "FEEDER 33 RECLOSING",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "SOFTWARE",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "PORT 2 IED 3",
+    "Comments": ""
+  },
+  {
+    "RTU": 32,
+    "TMS": 33,
+    "Description": "FEEDER 33 INST. TRIPPING",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 33,
+    "TMS": 34,
+    "Description": "FEEDER 33 TRIP/CLOSE",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 34,
+    "TMS": 35,
+    "Description": "FEEDER 33 ALT SET CTRL",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 35,
+    "TMS": 36,
+    "Description": "FEEDER 33 TRANSFER (SPARE IF NOT USED)",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 36,
+    "TMS": 37,
+    "Description": "FEEDER 33 LINE WORK ",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 37,
+    "TMS": 38,
+    "Description": "FEEDER 34 RECLOSING",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "SOFTWARE",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "PORT 2 IED 4",
+    "Comments": ""
+  },
+  {
+    "RTU": 38,
+    "TMS": 39,
+    "Description": "FEEDER 34 INST. TRIPPING",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 39,
+    "TMS": 40,
+    "Description": "FEEDER 34 TRIP/CLOSE",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 40,
+    "TMS": 41,
+    "Description": "FEEDER 34 ALT SET CTRL",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 41,
+    "TMS": 42,
+    "Description": "FEEDER 34 TRANSFER (SPARE IF NOT USED)",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 42,
+    "TMS": 43,
+    "Description": "FEEDER 34 LINE WORK ",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 43,
+    "TMS": 44,
+    "Description": "FEEDER TIE 35 RECLOSING",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "SOFTWARE",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "PORT 2 IED 5",
+    "Comments": ""
+  },
+  {
+    "RTU": 44,
+    "TMS": 45,
+    "Description": "FEEDER TIE 35 INST. TRIPPING",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 45,
+    "TMS": 46,
+    "Description": "FEEDER TIE 35 TRIP/CLOSE",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 46,
+    "TMS": 47,
+    "Description": "FEEDER TIE 35 ALT SET CTRL",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 47,
+    "TMS": 48,
+    "Description": "FEEDER TIE 35 TRANSFER  (SPARE IF NOT USED)",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 48,
+    "TMS": 49,
+    "Description": "FEEDER TIE 35 LINE WORK ",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 49,
+    "TMS": 50,
+    "Description": "FEEDER BUS-TIE 30 RECLOSING",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "SOFTWARE",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "PORT 2 IED 6",
+    "Comments": ""
+  },
+  {
+    "RTU": 50,
+    "TMS": 51,
+    "Description": "FEEDER BUS-TIE 30 INST. TRIPPING",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 51,
+    "TMS": 52,
+    "Description": "FEEDER BUS-TIE 30 TRIP/CLOSE",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 52,
+    "TMS": 53,
+    "Description": "FEEDER BUS-TIE 30 ALT SET CTRL",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 53,
+    "TMS": 54,
+    "Description": "FEEDER BUS-TIE 30 TRANSFER (SPARE NOT USED)",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 54,
+    "TMS": 55,
+    "Description": "FEEDER BUS-TIE 30 LINE WORK ",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 55,
+    "TMS": 56,
+    "Description": "FEEDER 41 RECLOSING",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "SOFTWARE",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "PORT 3 IED 1",
+    "Comments": ""
+  },
+  {
+    "RTU": 56,
+    "TMS": 57,
+    "Description": "FEEDER 41 INST. TRIPPING",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 57,
+    "TMS": 58,
+    "Description": "FEEDER 41 TRIP/CLOSE",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 58,
+    "TMS": 59,
+    "Description": "FEEDER 41 ALT SET CTRL",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 59,
+    "TMS": 60,
+    "Description": "FEEDER 41 TRANSFER (SPARE IF NOT USED)",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 60,
+    "TMS": 61,
+    "Description": "FEEDER 41 LINE WORK ",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 61,
+    "TMS": 62,
+    "Description": "FEEDER 42 RECLOSING",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "SOFTWARE",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "PORT 3 IED 2",
+    "Comments": ""
+  },
+  {
+    "RTU": 62,
+    "TMS": 63,
+    "Description": "FEEDER 42 INST. TRIPPING",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 63,
+    "TMS": 64,
+    "Description": "FEEDER 42 TRIP/CLOSE",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 64,
+    "TMS": 65,
+    "Description": "FEEDER 42 ALT SET CTRL",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 65,
+    "TMS": 66,
+    "Description": "FEEDER 42 TRANSFER (SPARE IF NOT USED)",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 66,
+    "TMS": 67,
+    "Description": "FEEDER 42 LINE WORK ",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 67,
+    "TMS": 68,
+    "Description": "FEEDER 43 RECLOSING",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "SOFTWARE",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "PORT 3 IED 3",
+    "Comments": ""
+  },
+  {
+    "RTU": 68,
+    "TMS": 69,
+    "Description": "FEEDER 43 INST. TRIPPING",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 69,
+    "TMS": 70,
+    "Description": "FEEDER 43 TRIP/CLOSE",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 70,
+    "TMS": 71,
+    "Description": "FEEDER 43 ALT SET CTRL",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 71,
+    "TMS": 72,
+    "Description": "FEEDER 43 TRANSFER (SPARE IF NOT USED)",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 72,
+    "TMS": 73,
+    "Description": "FEEDER 43 LINE WORK ",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 73,
+    "TMS": 74,
+    "Description": "FEEDER 44 RECLOSING",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "SOFTWARE",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "PORT 3 IED 4",
+    "Comments": ""
+  },
+  {
+    "RTU": 74,
+    "TMS": 75,
+    "Description": "FEEDER 44 INST. TRIPPING",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 75,
+    "TMS": 76,
+    "Description": "FEEDER 44 TRIP/CLOSE",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 76,
+    "TMS": 77,
+    "Description": "FEEDER 44 ALT SET CTRL",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 77,
+    "TMS": 78,
+    "Description": "FEEDER 44 TRANSFER (SPARE IF NOT USED)",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 78,
+    "TMS": 79,
+    "Description": "FEEDER 44 LINE WORK ",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 79,
+    "TMS": 80,
+    "Description": "FEEDER TIE 45 RECLOSING",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "SOFTWARE",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "PORT 3 IED 5",
+    "Comments": ""
+  },
+  {
+    "RTU": 80,
+    "TMS": 81,
+    "Description": "FEEDER TIE 45 INST. TRIPPING",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 81,
+    "TMS": 82,
+    "Description": "FEEDER TIE 45 TRIP/CLOSE",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 82,
+    "TMS": 83,
+    "Description": "FEEDER TIE 45 ALT SET CTRL",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 83,
+    "TMS": 84,
+    "Description": "FEEDER TIE 45 TRANSFER (SPARE IF NOT USED)",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 84,
+    "TMS": 85,
+    "Description": "FEEDER TIE 45 LINE WORK ",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 85,
+    "TMS": 86,
+    "Description": "",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 86,
+    "TMS": 87,
+    "Description": "",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 87,
+    "TMS": 88,
+    "Description": "",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 88,
+    "TMS": 89,
+    "Description": "",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 89,
+    "TMS": 90,
+    "Description": "",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 90,
+    "TMS": 91,
+    "Description": "",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 91,
+    "TMS": 92,
+    "Description": "",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 92,
+    "TMS": 93,
+    "Description": "",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 93,
+    "TMS": 94,
+    "Description": "",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 94,
+    "TMS": 95,
+    "Description": "",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 95,
+    "TMS": 96,
+    "Description": "",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 96,
+    "TMS": 97,
+    "Description": "",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 97,
+    "TMS": 98,
+    "Description": "",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 98,
+    "TMS": 99,
+    "Description": "",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  },
+  {
+    "RTU": 99,
+    "TMS": 100,
+    "Description": "",
+    "OSI Name": "",
+    "SCADA Key": "",
+    "Termination Point/Type (Utilize for Hardware and software)": "",
+    "Termination Point/Type (Utilize for Hardware and software) 1": "",
+    "Comments": ""
+  }
+]

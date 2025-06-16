@@ -1,4 +1,4 @@
-﻿namespace RTUAutomation.API.Controllers;
+﻿namespace RTUAutomation.Api.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]

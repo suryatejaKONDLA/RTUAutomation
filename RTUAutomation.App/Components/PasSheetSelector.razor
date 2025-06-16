@@ -1,0 +1,14 @@
+﻿<MudRadioGroup T="string"
+               @bind-SelectedValue="SelectedSheet"
+               ValueChanged="OnSelectedChanged"
+               Class="d-flex flex-wrap gap-3">
+    @{
+        if (SheetNames?.Any() == true)
+        {
+            foreach (var sheet in SheetNames)
+            {
+                <MudRadio T="@(string)" Value="@(sheet)">@(sheet)</MudRadio>
+            }
+        }
+    }
+</MudRadioGroup>

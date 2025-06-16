@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36202.13 d17.14
+VisualStudioVersion = 17.14.36202.13
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RTUAutomation.API", "RTUAutomation.API\RTUAutomation.API.csproj", "{48F1E424-8547-4D49-A12A-251F0ED80E12}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RTUAutomation.Api", "RTUAutomation.API\RTUAutomation.Api.csproj", "{48F1E424-8547-4D49-A12A-251F0ED80E12}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RTUAutomation.Services", "RTUAutomation.Services\RTUAutomation.Services.csproj", "{6ACC45C3-487B-415B-915A-3B36C3435DAC}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RTUAutomation.Common", "RTUAutomation.Common\RTUAutomation.Common.csproj", "{B178B4E6-82F2-4784-BBEA-383623D6B176}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RTUAutomation.Models", "RTUAutomation.Models\RTUAutomation.Models.csproj", "{1334C941-81DC-4C1F-A34E-BC4F8C0AD2E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RTUAutomation.App", "RTUAutomation.App\RTUAutomation.App.csproj", "{BBD6FA0D-BD30-46C6-B1A2-4FE247AD2AC5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{1334C941-81DC-4C1F-A34E-BC4F8C0AD2E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1334C941-81DC-4C1F-A34E-BC4F8C0AD2E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1334C941-81DC-4C1F-A34E-BC4F8C0AD2E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBD6FA0D-BD30-46C6-B1A2-4FE247AD2AC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBD6FA0D-BD30-46C6-B1A2-4FE247AD2AC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBD6FA0D-BD30-46C6-B1A2-4FE247AD2AC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBD6FA0D-BD30-46C6-B1A2-4FE247AD2AC5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
