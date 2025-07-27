@@ -17,8 +17,8 @@
 	  <ProjectReference Include="..\RTUAutomation.Services\RTUAutomation.Services.csproj" />
 	</ItemGroup>
 	<ItemGroup>
-		<ServiceWorker Include="wwwroot\service-worker.published.js" />
-		<!--<ServiceWorker Include="wwwroot\service-worker.js" PublishedContent="wwwroot\service-worker.published.js" />-->
+		<!--<ServiceWorker Include="wwwroot\service-worker.published.js" />-->
+		<ServiceWorker Include="wwwroot\service-worker.js" PublishedContent="wwwroot\service-worker.published.js" />
 	</ItemGroup>
 	<ItemGroup>
 		<Content Update="wwwroot\templatesJson\*.json">

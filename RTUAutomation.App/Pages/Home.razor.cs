@@ -2,15 +2,13 @@
 
 public partial class Home : ComponentBase
 {
-    [Inject] private IJSRuntime JsRuntime { get; set; }
+    private string SelectedFileName = string.Empty;
+    private string SelectedSheetName = string.Empty;
+    private List<string> SheetsNames = [];
 
     private List<PasStandardizationTemplateAnalogSheetModel> AnalogData = [];
     private List<PasStandardizationTemplateStatusSheetModel> StatusData = [];
     private List<PasStandardizationTemplateControlsSheetModel> ControlsData = [];
-
-    private string SelectedFileName = string.Empty;
-    private string SelectedSheetName = string.Empty;
-    private List<string> SheetsNames = [];
 
     private readonly Dictionary<string, Type> SheetModelMap = new()
     {
@@ -22,32 +20,32 @@ public partial class Home : ComponentBase
     protected override void OnInitialized()
     {
         SheetsNames = SheetModelMap.Keys.ToList();
-        base.OnInitialized();
     }
-
 
     private async Task OnFileSelectedAsync(string fileName)
     {
         SelectedFileName = fileName;
-        await LoadSheetDataAsync();
+        await LoadAndRenderSheetAsync();
     }
 
     private async Task OnSheetSelectedAsync(string sheetName)
     {
         SelectedSheetName = sheetName;
-        await LoadSheetDataAsync();
+        await LoadAndRenderSheetAsync();
     }
 
-    private async Task LoadSheetDataAsync()
+    private async Task LoadAndRenderSheetAsync()
     {
         if (string.IsNullOrWhiteSpace(SelectedFileName) || string.IsNullOrWhiteSpace(SelectedSheetName))
-        {
             return;
-        }
+
+        // Reset all
         AnalogData = [];
         StatusData = [];
         ControlsData = [];
-        var json = await JsRuntime.InvokeAsync<string>("readLocalJson", $"templatesJson/{SelectedFileName}_{SelectedSheetName}.json");
+
+        var jsonPath = $"templatesJson/{SelectedFileName}_{SelectedSheetName}.json";
+        var json = await JsRuntime.InvokeAsync<string>("readLocalJson", jsonPath);
 
         switch (SelectedSheetName)
         {
@@ -62,6 +60,27 @@ public partial class Home : ComponentBase
                 break;
         }
 
-        StateHasChanged();
+        await InvokeAsync(StateHasChanged);
+        await Task.Delay(1000); // Ensure DOM is rendered
+        await BindToAgGridAsync("myGrid", GetCurrentSheetData());
+    }
+
+    private List<object> GetCurrentSheetData()
+    {
+        return SelectedSheetName switch
+        {
+            "Analogs" => AnalogData.Cast<object>().ToList(),
+            "Status" => StatusData.Cast<object>().ToList(),
+            "Controls" => ControlsData.Cast<object>().ToList(),
+            _ => []
+        };
+    }
+
+    private async Task BindToAgGridAsync(string divId, List<object> data)
+    {
+        if (data?.Any() != true) return;
+
+        var json = JsonSerializer.Serialize(data);
+        await JsRuntime.InvokeVoidAsync("AgGridInterop.renderGrid", divId, JsonDocument.Parse(json).RootElement);
     }
 }

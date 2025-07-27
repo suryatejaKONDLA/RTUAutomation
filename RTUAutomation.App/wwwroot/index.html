@@ -15,6 +15,7 @@
     <link rel="apple-touch-icon" sizes="192x192" href="icon-192.png" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
     <link href="_content/MudBlazor/MudBlazor.min.css" rel="stylesheet" />
+    <!-- ✅ Styles -->
 </head>
 
 <body>
@@ -31,10 +32,14 @@
         <a href="." class="reload">Reload</a>
         <span class="dismiss">🗙</span>
     </div>
+
+    <!-- ✅ FULL UMD BUNDLE (must include 'ag-grid-community.min.js' with 'Grid' exposed) -->
+    <script src="https://cdn.jsdelivr.net/npm/ag-grid-community/dist/ag-grid-community.min.js"></script>
     <script src="_framework/blazor.webassembly.js"></script>
     <script src="_content/MudBlazor/MudBlazor.min.js"></script>
     <script src="lib/sheetjs/xlsx.full.min.js"></script>
     <script src="js/custom.js"></script>
+    <script src="js/aggridcustom.js"></script>
     <script>navigator.serviceWorker.register('service-worker.published.js');</script>
 </body>
 
