@@ -6,7 +6,10 @@
             return;
         }
 
-        const columnDefs = Object.keys(data[0]).map(k => ({ field: k }));
+        const columnDefs = Object.keys(data[0]).map(k => ({
+            field: k,
+            editable: true // <-- Enable editing per column
+        }));
 
         container.innerHTML = ''; // Clear existing grid
 
@@ -16,11 +19,11 @@
             defaultColDef: {
                 sortable: true,
                 filter: true,
-                resizable: true
+                resizable: true,
+                editable: true // <-- Enable editing by default
             },
             autoSizeStrategy: { type: 'fitCellContents' },
 
-            // Trigger auto-size after events
             onFirstDataRendered: (params) => {
                 const allCols = params.columnApi.getAllColumns();
                 if (allCols) {
