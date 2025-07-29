@@ -12,6 +12,8 @@
         const pHOptions = [
             "A", "B", "C", "N"
         ];
+        const statusDescription = [
+            "Off/On", "Disable/Enable", "Remote/Local", "Local/Remote", "Normal/Alarm", "Alarm/Normal", "Tripped/Closed", "Open/Closed", "Closed/Open", "FDR/TIE", "Set/Reset"];
 
         const columnDefs = Object.keys(data[0]).map(k => {
             const colDef = {
@@ -30,6 +32,12 @@
                 colDef.cellEditor = 'agSelectCellEditor';
                 colDef.cellEditorParams = {
                     values: pHOptions
+                };
+            }
+            if (k === "Status Description") {
+                colDef.cellEditor = 'agSelectCellEditor';
+                colDef.cellEditorParams = {
+                    values: statusDescription
                 };
             }
 
