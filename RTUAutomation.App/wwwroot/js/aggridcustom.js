@@ -6,11 +6,36 @@
             return;
         }
 
-        const columnDefs = Object.keys(data[0]).map(k => ({
-            field: k,
-            editable: true,
-            valueParser: params => String(params.newValue ?? null)
-        }));
+        const unitOptions = [
+            "AMPS", "VOLTS", "MW", "MV", "THD", "KF", "°", "PPM"
+        ];
+        const pHOptions = [
+            "A", "B", "C", "N"
+        ];
+
+        const columnDefs = Object.keys(data[0]).map(k => {
+            const colDef = {
+                field: k,
+                editable: true,
+                valueParser: params => String(params.newValue ?? null)
+            };
+
+            if (k === "Unit") {
+                colDef.cellEditor = 'agSelectCellEditor';
+                colDef.cellEditorParams = {
+                    values: unitOptions
+                };
+            }
+            if (k === "Ph") {
+                colDef.cellEditor = 'agSelectCellEditor';
+                colDef.cellEditorParams = {
+                    values: pHOptions
+                };
+            }
+
+            return colDef;
+        });
+
 
 
         container.innerHTML = '';
