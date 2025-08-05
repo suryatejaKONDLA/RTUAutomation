@@ -19,8 +19,4 @@
     <ProjectReference Include="..\RTUAutomation.Services\RTUAutomation.Services.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Logs\" />
-  </ItemGroup>
-
 </Project>

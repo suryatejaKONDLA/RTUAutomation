@@ -46,11 +46,21 @@ builder.Services.AddHealthChecks();
 builder.Services.AddControllers();
 builder.Services.AddValidatorsFromAssemblyContaining<ResponseResult>(ServiceLifetime.Transient);
 ValidatorOptions.Global.DefaultRuleLevelCascadeMode = CascadeMode.Stop;
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowBlazorWasm", policy =>
+    {
+        policy.WithOrigins("https://localhost:7150") // <--- your Blazor WASM app origin
+            .AllowAnyHeader()
+            .AllowAnyMethod();
+    });
+});
+
 var app = builder.Build();
 
 app.UseSerilogRequestLogging();
 app.UseHttpsRedirection();
-
+app.UseCors("AllowBlazorWasm");
 app.UseOpenApi(opt => opt.Path = openApiPath);
 app.UseSwaggerUi(settings =>
 {
