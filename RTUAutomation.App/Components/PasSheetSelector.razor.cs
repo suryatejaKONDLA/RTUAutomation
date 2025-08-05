@@ -2,11 +2,14 @@
 
 public partial class PasSheetSelector : ComponentBase
 {
-    [Parameter] public List<string> SheetNames { get; set; } = [];
+    [Parameter]
+    public List<string> SheetNames { get; set; } = [];
 
-    [Parameter] public string SelectedSheet { get; set; }
+    [Parameter]
+    public string SelectedSheet { get; set; }
 
-    [Parameter] public EventCallback<string> SelectedSheetChanged { get; set; }
+    [Parameter]
+    public EventCallback<string> SelectedSheetChanged { get; set; }
 
     private async Task OnSelectedChanged(string value)
     {

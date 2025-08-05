@@ -1,9 +1,18 @@
-﻿<MudSelect T="@(string)"
-           Label="Select Template"
-           Variant="Variant.Outlined"
+﻿<MudSelect Label="Select Template"
            Margin="Margin.Dense"
-           ValueChanged="@(OnValueChanged)">
-    <MudSelectItem T="@(string)" Value="@("PAS_Standardization_Template")">PAS Standardization Template</MudSelectItem>
-    <MudSelectItem T="@(string)" Value="@("SUB_IV_PAS_Standardization_Template_STATION_1_2")">SUB IV PAS Standardization Template (STATION 1&amp;2)</MudSelectItem>
-    <MudSelectItem T="@(string)" Value="@("SUB_IV_PAS_Standardization_Template_STATION_3_4")">SUB IV PAS Standardization Template (STATION 3&amp;4)</MudSelectItem>
+           T="@(string)"
+           ValueChanged="@(OnValueChanged)"
+           Variant="Variant.Outlined">
+    <MudSelectItem T="@(string)"
+                   Value="@("PAS_Standardization_Template")">
+        PAS Standardization Template
+    </MudSelectItem>
+    <MudSelectItem T="@(string)"
+                   Value="@("SUB_IV_PAS_Standardization_Template_STATION_1_2")">
+        SUB IV PAS Standardization Template (STATION 1&amp;2)
+    </MudSelectItem>
+    <MudSelectItem T="@(string)"
+                   Value="@("SUB_IV_PAS_Standardization_Template_STATION_3_4")">
+        SUB IV PAS Standardization Template (STATION 3&amp;4)
+    </MudSelectItem>
 </MudSelect>

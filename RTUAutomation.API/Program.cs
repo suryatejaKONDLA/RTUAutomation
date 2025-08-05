@@ -1,3 +1,5 @@
+using RTUAutomation.Repository.MasterRepositories.PhMasterRepositories;
+
 const string appName = "RTUAutomation.API";
 const string apiTitle = "RTU Automation API";
 const string apiVersion = "v1";
@@ -36,11 +38,14 @@ builder.Services.AddOpenApiDocument(config =>
     config.Title = apiTitle;
     config.Version = apiVersion;
 });
-
+builder.Services.AddAutoDiscoveredServices(
+    typeof(PhMasterService).Assembly,
+    typeof(PhMasterRepository).Assembly
+);
 builder.Services.AddHealthChecks();
 builder.Services.AddControllers();
-builder.Services.AddRtuAutomationServices();
-
+builder.Services.AddValidatorsFromAssemblyContaining<ResponseResult>(ServiceLifetime.Transient);
+ValidatorOptions.Global.DefaultRuleLevelCascadeMode = CascadeMode.Stop;
 var app = builder.Build();
 
 app.UseSerilogRequestLogging();

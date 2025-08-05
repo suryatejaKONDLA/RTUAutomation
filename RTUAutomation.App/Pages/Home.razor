@@ -4,7 +4,7 @@
 <PageTitle>Home</PageTitle>
 
 <div class="container-fluid">
-    <div class="row align-items-end g-4 mb-3">
+    <div class="align-items-end g-4 mb-3 row">
         <div class="col-md-4">
             <PasTemplateDropdown ValueChanged="OnFileSelectedAsync" />
         </div>
@@ -12,12 +12,13 @@
         @if (!string.IsNullOrEmpty(SelectedFileName))
         {
             <div class="col-md-8">
-                <PasSheetSelector SheetNames="SheetsNames" SelectedSheetChanged="OnSheetSelectedAsync" />
+                <PasSheetSelector SelectedSheetChanged="OnSheetSelectedAsync"
+                                  SheetNames="SheetsNames" />
             </div>
         }
     </div>
 
-    <div class="row align-items-end g-4 mt-3">
+    <div class="align-items-end g-4 mt-3 row">
         @if (!string.IsNullOrWhiteSpace(SelectedSheetName))
         {
             <div class="col-12">
@@ -32,13 +33,19 @@
         }
     </div>
 </div>
-<div id="myGrid" style="height: 500px;"></div>
+<div id="myGrid"
+     style="height: 500px;">
+</div>
 
 @code {
 
-    private RenderFragment Spinner() => @<div class="d-flex justify-content-center align-items-center" style="height: 200px;">
-        <div class="spinner-grow text-primary" role="status" style="width: 4rem; height: 4rem;">
-            <span class="visually-hidden">Loading...</span>
-        </div>
-    </div>;
+    private RenderFragment Spinner() => @<div class="align-items-center d-flex justify-content-center"
+                                              style="height: 200px;">
+                                            <div class="spinner-grow text-primary"
+                                                 role="status"
+                                                 style="width: 4rem; height: 4rem;">
+                                                <span class="visually-hidden">Loading...</span>
+                                            </div>
+                                        </div>;
+
 }

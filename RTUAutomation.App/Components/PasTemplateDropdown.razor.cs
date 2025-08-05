@@ -8,8 +8,5 @@ public partial class PasTemplateDropdown : ComponentBase
     [Parameter]
     public EventCallback<string> ValueChanged { get; set; }
 
-    private async Task OnValueChanged(string value)
-    {
-        await ValueChanged.InvokeAsync(value);
-    }
+    private async Task OnValueChanged(string value) { await ValueChanged.InvokeAsync(value); }
 }

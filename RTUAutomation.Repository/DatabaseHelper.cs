@@ -1,8 +1,9 @@
 ﻿namespace RTUAutomation.Repository;
 
+[AutoRegisterService]
 public sealed class DatabaseHelper(IConfiguration configuration)
 {
-    #region ADO.NET Execute Methods (For Insert, Update, Delete)
+#region ADO.NET Execute Methods (For Insert, Update, Delete)
 
     public async Task<ResponseResult> ExecuteQueryAsync(string sqlQuery, Dictionary<string, object> parameters = null)
     {
@@ -51,9 +52,9 @@ public sealed class DatabaseHelper(IConfiguration configuration)
         }
     }
 
-    #endregion
+#endregion
 
-    #region Helpers
+#region Helpers
 
     public static (string inClause, Dictionary<string, object> parameters) BuildInClause<T>(List<T> id, string paramPrefix)
     {
@@ -71,9 +72,9 @@ public sealed class DatabaseHelper(IConfiguration configuration)
         return (inClause, parameters);
     }
 
-    #endregion
+#endregion
 
-    #region ConnectionString
+#region ConnectionString
 
     private string GetConnectionStringForCurrentRequest()
     {
@@ -91,9 +92,9 @@ public sealed class DatabaseHelper(IConfiguration configuration)
 
     private SqlConnection CreateConnection() => new(GetConnectionStringForCurrentRequest());
 
-    #endregion
+#endregion
 
-    #region ADO.NET Methods (For Executing Stored Procedures)
+#region ADO.NET Methods (For Executing Stored Procedures)
 
     public async Task<int> ExecuteStoredProcedureAsync(string spName, List<SqlParameter> parameters)
     {
@@ -152,9 +153,9 @@ public sealed class DatabaseHelper(IConfiguration configuration)
         }
     }
 
-    #endregion
+#endregion
 
-    #region Dapper Methods (For Select Queries Only)
+#region Dapper Methods (For Select Queries Only)
 
     public async Task<IEnumerable<T>> QueryAsync<T>(string sqlQuery, object parameters = null)
     {
@@ -202,7 +203,7 @@ public sealed class DatabaseHelper(IConfiguration configuration)
         }
     }
 
-    #region QueryMultipleAsync
+#region QueryMultipleAsync
 
     public async Task<(IEnumerable<T1>, IEnumerable<T2>)> QueryMultipleAsync<T1, T2>(string sqlQuery, object parameters = null)
     {
@@ -358,11 +359,11 @@ public sealed class DatabaseHelper(IConfiguration configuration)
         }
     }
 
-    #endregion
+#endregion
 
-    #endregion
+#endregion
 
-    #region Logging Helpers
+#region Logging Helpers
 
     private static readonly JsonSerializerOptions JsonSerializerOptions = new()
     {
@@ -384,5 +385,5 @@ public sealed class DatabaseHelper(IConfiguration configuration)
         }
     }
 
-    #endregion
+#endregion
 }

@@ -3,44 +3,63 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="width=device-width, initial-scale=1.0"
+          name="viewport" />
     <title>ExcelUpload</title>
     <base href="/" />
-    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/app.css" />
-    <link rel="icon" type="image/png" href="favicon.png" />
+    <link href="lib/bootstrap/dist/css/bootstrap.min.css"
+          rel="stylesheet" />
+    <link href="css/app.css"
+          rel="stylesheet" />
+    <link href="favicon.png"
+          rel="icon"
+          type="image/png" />
     <!--<link href="ExcelUpload.styles.css" rel="stylesheet" />-->
-    <link href="manifest.webmanifest" rel="manifest" />
-    <link rel="apple-touch-icon" sizes="512x512" href="icon-512.png" />
-    <link rel="apple-touch-icon" sizes="192x192" href="icon-192.png" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
-    <link href="_content/MudBlazor/MudBlazor.min.css" rel="stylesheet" />
+    <link href="manifest.webmanifest"
+          rel="manifest" />
+    <link href="icon-512.png"
+          rel="apple-touch-icon"
+          sizes="512x512" />
+    <link href="icon-192.png"
+          rel="apple-touch-icon"
+          sizes="192x192" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+          rel="stylesheet" />
+    <link href="_content/MudBlazor/MudBlazor.min.css"
+          rel="stylesheet" />
     <!-- ✅ Styles -->
 </head>
 
 <body>
-    <div id="app">
-        <svg class="loading-progress">
-            <circle r="40%" cx="50%" cy="50%" />
-            <circle r="40%" cx="50%" cy="50%" />
-        </svg>
-        <div class="loading-progress-text"></div>
-    </div>
+<div id="app">
+    <svg class="loading-progress">
+        <circle cx="50%"
+                cy="50%"
+                r="40%" />
+        <circle cx="50%"
+                cy="50%"
+                r="40%" />
+    </svg>
+    <div class="loading-progress-text"></div>
+</div>
 
-    <div id="blazor-error-ui">
-        An unhandled error has occurred.
-        <a href="." class="reload">Reload</a>
-        <span class="dismiss">🗙</span>
-    </div>
+<div id="blazor-error-ui">
+    An unhandled error has occurred.
+    <a class="reload"
+       href=".">
+        Reload
+    </a>
+    <span class="dismiss">🗙</span>
+</div>
 
-    <!-- ✅ FULL UMD BUNDLE (must include 'ag-grid-community.min.js' with 'Grid' exposed) -->
-    <script src="https://cdn.jsdelivr.net/npm/ag-grid-enterprise@34.0.2/dist/ag-grid-enterprise.min.js"></script>
-    <script src="_framework/blazor.webassembly.js"></script>
-    <script src="_content/MudBlazor/MudBlazor.min.js"></script>
-    <script src="lib/sheetjs/xlsx.full.min.js"></script>
-    <script src="js/custom.js"></script>
-    <script src="js/aggridcustom.js"></script>
-    <script>navigator.serviceWorker.register('service-worker.published.js');</script>
+<!-- ✅ FULL UMD BUNDLE (must include 'ag-grid-community.min.js' with 'Grid' exposed) -->
+<script src="https://cdn.jsdelivr.net/npm/ag-grid-enterprise@34.0.2/dist/ag-grid-enterprise.min.js"></script>
+<script src="_framework/blazor.webassembly.js"></script>
+<script src="_content/MudBlazor/MudBlazor.min.js"></script>
+<script src="lib/sheetjs/xlsx.full.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/aggridcustom.js"></script>
+<script>navigator.serviceWorker.register('service-worker.published.js');</script>
 </body>
 
 </html>

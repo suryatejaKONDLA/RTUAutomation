@@ -2,14 +2,6 @@
 
 public partial class Home : ComponentBase
 {
-    private string SelectedFileName = string.Empty;
-    private string SelectedSheetName = string.Empty;
-    private List<string> SheetsNames = [];
-
-    private List<PasStandardizationTemplateAnalogSheetModel> AnalogData = [];
-    private List<PasStandardizationTemplateStatusSheetModel> StatusData = [];
-    private List<PasStandardizationTemplateControlsSheetModel> ControlsData = [];
-
     private readonly Dictionary<string, Type> SheetModelMap = new()
     {
         { "Analogs", typeof(PasStandardizationTemplateAnalogSheetModel) },
@@ -17,10 +9,14 @@ public partial class Home : ComponentBase
         { "Controls", typeof(PasStandardizationTemplateControlsSheetModel) }
     };
 
-    protected override void OnInitialized()
-    {
-        SheetsNames = SheetModelMap.Keys.ToList();
-    }
+    private List<PasStandardizationTemplateAnalogSheetModel> AnalogData = [];
+    private List<PasStandardizationTemplateControlsSheetModel> ControlsData = [];
+    private string SelectedFileName = string.Empty;
+    private string SelectedSheetName = string.Empty;
+    private List<string> SheetsNames = [];
+    private List<PasStandardizationTemplateStatusSheetModel> StatusData = [];
+
+    protected override void OnInitialized() { SheetsNames = SheetModelMap.Keys.ToList(); }
 
     private async Task OnFileSelectedAsync(string fileName)
     {
@@ -37,7 +33,9 @@ public partial class Home : ComponentBase
     private async Task LoadAndRenderSheetAsync()
     {
         if (string.IsNullOrWhiteSpace(SelectedFileName) || string.IsNullOrWhiteSpace(SelectedSheetName))
+        {
             return;
+        }
 
         // Reset all
         AnalogData = [];
@@ -78,7 +76,10 @@ public partial class Home : ComponentBase
 
     private async Task BindToAgGridAsync(string divId, List<object> data)
     {
-        if (data?.Any() != true) return;
+        if (data?.Any() != true)
+        {
+            return;
+        }
 
         var json = JsonSerializer.Serialize(data);
         await JsRuntime.InvokeVoidAsync("AgGridInterop.renderGrid", divId, JsonDocument.Parse(json).RootElement);
